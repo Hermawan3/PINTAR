@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINTAR - Manajemen Kelas & Murid PAUD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-book"></i>
+                <span>PINTAR</span>
+            </div>
+            <h1 class="header-title">Manajemen Kelas & Murid PAUD</h1>
+            <div class="header-right">
+                <div class="date-time">
+                    <span id="current-date"></span>
+                </div>
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+                    <span class="username">Ibu Guru</span>
+                </div>
+                <button class="icon-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>Selamat datang, Ibu Guru! 👋</h2>
+            <p>Kelola kelas dan murid Anda dengan mudah dan efisien</p>
+        </section>
+
+        <!-- KPI Cards -->
+        <section class="kpi-cards">
+            <div class="kpi-card">
+                <div class="kpi-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <i class="fas fa-chalkboard-user"></i>
+                </div>
+                <div class="kpi-content">
+                    <h3>Kelas Aktif</h3>
+                    <p class="kpi-value">4</p>
+                    <span class="kpi-subtitle">TK A, TK B, KB, dan TPA</span>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="kpi-content">
+                    <h3>Total Murid</h3>
+                    <p class="kpi-value">56</p>
+                    <span class="kpi-subtitle">Seluruh kelas</span>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="kpi-content">
+                    <h3>Hadir Hari Ini</h3>
+                    <p class="kpi-value">52</p>
+                    <span class="kpi-subtitle">4 murid tidak hadir</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+            <!-- Left Column -->
+            <div class="content-left">
+                <!-- Daftar Kelas -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-list"></i> Kelas Saya</h3>
+                        <a href="#" class="link-btn">Lihat Semua</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="class-item">
+                            <div class="class-info">
+                                <h4>TK A (Pagi)</h4>
+                                <p><strong>15 murid</strong> • Jam 08:00-10:00</p>
+                            </div>
+                            <div class="class-status">
+                                <span class="badge active">Aktif</span>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-info">
+                                <h4>TK B (Sore)</h4>
+                                <p><strong>13 murid</strong> • Jam 13:00-15:00</p>
+                            </div>
+                            <div class="class-status">
+                                <span class="badge active">Aktif</span>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-info">
+                                <h4>KB (Khusus)</h4>
+                                <p><strong>8 murid</strong> • Jam 09:00-11:00</p>
+                            </div>
+                            <div class="class-status">
+                                <span class="badge inactive">Tidak Aktif</span>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-info">
+                                <h4>TPA (Program Khusus)</h4>
+                                <p><strong>20 murid</strong> • Jam 07:00-12:00</p>
+                            </div>
+                            <div class="class-status">
+                                <span class="badge active">Aktif</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Aktivitas Terbaru -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-history"></i> Aktivitas Terbaru</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background-color: #e3f2fd;">
+                                <i class="fas fa-user-check" style="color: #2196f3;"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>Andi Wijaya</strong> masuk pada 09:00</p>
+                                <span class="activity-time">5 menit yang lalu</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background-color: #f3e5f5;">
+                                <i class="fas fa-star" style="color: #9c27b0;"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Nilai harian <strong>Budi Santoso</strong> diperbarui</p>
+                                <span class="activity-time">15 menit yang lalu</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background-color: #f1f8e9;">
+                                <i class="fas fa-file-pdf" style="color: #689f38;"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Laporan bulanan <strong>TK A</strong> siap diunduh</p>
+                                <span class="activity-time">1 jam yang lalu</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background-color: #ffe0b2;">
+                                <i class="fas fa-exclamation-circle" style="color: #ff9800;"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p><strong>3 murid</strong> belum absen hari ini</p>
+                                <span class="activity-time">2 jam yang lalu</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="content-right">
+                <!-- Akses Cepat -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-bolt"></i> Akses Cepat</h3>
+                    </div>
+                    <div class="card-body quick-actions">
+                        <button class="action-btn primary">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Catat Kehadiran</span>
+                        </button>
+                        <button class="action-btn secondary">
+                            <i class="fas fa-star"></i>
+                            <span>Beri Nilai</span>
+                        </button>
+                        <button class="action-btn tertiary">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Lihat Laporan</span>
+                        </button>
+                        <button class="action-btn quaternary">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Tambah Murid</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Jadwal Hari Ini -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-calendar-days"></i> Jadwal Hari Ini</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <strong>08:00</strong>
+                                <span>-</span>
+                                <strong>10:00</strong>
+                            </div>
+                            <div class="schedule-info">
+                                <h5>TK A - Pembelajaran Pagi</h5>
+                                <p>Ruang Kelas A</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <strong>10:30</strong>
+                                <span>-</span>
+                                <strong>12:00</strong>
+                            </div>
+                            <div class="schedule-info">
+                                <h5>TK B - Pembelajaran Pagi</h5>
+                                <p>Ruang Kelas B</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <strong>13:00</strong>
+                                <span>-</span>
+                                <strong>14:30</strong>
+                            </div>
+                            <div class="schedule-info">
+                                <h5>TPA - Pembelajaran Sore</h5>
+                                <p>Ruang Kelas C</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">
+                                <strong>15:00</strong>
+                                <span>-</span>
+                                <strong>16:00</strong>
+                            </div>
+                            <div class="schedule-info">
+                                <h5>KB - Pembelajaran Khusus</h5>
+                                <p>Ruang Kelas D</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Notifikasi Penting -->
+                <section class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-bell"></i> Notifikasi Penting</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="notification notification-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p>Ada murid yang belum membayar SPP bulan ini</p>
+                        </div>
+                        <div class="notification notification-info">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Update sistem tersedia, lakukan update sekarang</p>
+                        </div>
+                        <div class="notification notification-success">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Laporan triwulan sudah diterima oleh kepala sekolah</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Navigation Footer -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Kelas</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Murid</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Laporan</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
